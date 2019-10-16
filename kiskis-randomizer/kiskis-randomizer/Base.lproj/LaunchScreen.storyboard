@@ -21,10 +21,27 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="wkb-Sy-3e5">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кис Кис" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxS-G7-csp">
+                                <rect key="frame" x="129" y="325.5" width="117.5" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="РАНДОМАЙЗЕР" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bf-Af-f0d">
+                                <rect key="frame" x="10" y="361.5" width="355" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="3bf-Af-f0d" firstAttribute="top" secondItem="nxS-G7-csp" secondAttribute="bottom" id="K9c-TG-XIM"/>
+                            <constraint firstItem="nxS-G7-csp" firstAttribute="centerX" secondItem="wkb-Sy-3e5" secondAttribute="centerX" id="aUA-lx-zUf"/>
+                            <constraint firstItem="3bf-Af-f0d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="f5h-pg-ABl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wkb-Sy-3e5" secondAttribute="trailing" id="k9S-Bh-yTL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3bf-Af-f0d" secondAttribute="trailing" constant="10" id="nfK-aU-ik8"/>
+                            <constraint firstItem="nxS-G7-csp" firstAttribute="centerY" secondItem="wkb-Sy-3e5" secondAttribute="centerY" id="ogL-tB-aU0"/>
                             <constraint firstItem="wkb-Sy-3e5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pbl-kk-Be9"/>
                             <constraint firstItem="wkb-Sy-3e5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rDr-jN-cls"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wkb-Sy-3e5" secondAttribute="bottom" id="vm3-Q1-L7Q"/>
@@ -34,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
     <resources>

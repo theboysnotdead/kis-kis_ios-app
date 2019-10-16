@@ -34,8 +34,11 @@ final class ViewController: UIViewController {
     }
     
     @IBAction func kiskisMemberChanged(_ sender: Any) {
-        imageBackground.image = segmentControl.selectedSegmentIndex == 0
-            ? KisKisMember.sonya.image
-            : KisKisMember.alyona.image
+        UIView.transition(with: imageBackground, duration: 0.5, options: .transitionCrossDissolve, animations: { [weak self] in
+            self?.imageBackground.image = self?.segmentControl.selectedSegmentIndex == 0
+                ? KisKisMember.sonya.image
+                : KisKisMember.alyona.image
+            
+        })
     }
 }
