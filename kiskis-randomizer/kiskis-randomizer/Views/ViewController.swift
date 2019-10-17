@@ -38,7 +38,6 @@ final class ViewController: UIViewController {
             self?.imageBackground.image = self?.segmentControl.selectedSegmentIndex == 0
                 ? KisKisMember.sonya.image
                 : KisKisMember.alina.image
-            
         })
     }
 }
