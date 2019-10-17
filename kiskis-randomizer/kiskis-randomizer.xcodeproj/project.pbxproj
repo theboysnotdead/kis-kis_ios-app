@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70F63E02358A81500C2B184 /* WebPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F63DF2358A81500C2B184 /* WebPlayerViewController.swift */; };
+		C70F63E32358AB5000C2B184 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F63E22358AB5000C2B184 /* NetworkService.swift */; };
+		C70F63E62358AEF700C2B184 /* MessageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F63E52358AEF700C2B184 /* MessageConstants.swift */; };
 		C71B4EFA2357C1C6006796C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71B4EF92357C1C6006796C9 /* AppDelegate.swift */; };
 		C71B4EFC2357C1C6006796C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71B4EFB2357C1C6006796C9 /* ViewController.swift */; };
 		C71B4EFF2357C1C6006796C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71B4EFD2357C1C6006796C9 /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C70F63DF2358A81500C2B184 /* WebPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPlayerViewController.swift; sourceTree = "<group>"; };
+		C70F63E22358AB5000C2B184 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		C70F63E52358AEF700C2B184 /* MessageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageConstants.swift; sourceTree = "<group>"; };
 		C71B4EF62357C1C6006796C9 /* kiskis-randomizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kiskis-randomizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C71B4EF92357C1C6006796C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C71B4EFB2357C1C6006796C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +41,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C70F63E12358AA4200C2B184 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C71B4EFB2357C1C6006796C9 /* ViewController.swift */,
+				C70F63DF2358A81500C2B184 /* WebPlayerViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C70F63E42358AB5300C2B184 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C70F63E22358AB5000C2B184 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C70F63E72358AEFD00C2B184 /* ErrorHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				C70F63E52358AEF700C2B184 /* MessageConstants.swift */,
+			);
+			path = ErrorHandlers;
+			sourceTree = "<group>";
+		};
 		C71B4EED2357C1C6006796C9 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +85,14 @@
 		C71B4EF82357C1C6006796C9 /* kiskis-randomizer */ = {
 			isa = PBXGroup;
 			children = (
-				C71B4EF92357C1C6006796C9 /* AppDelegate.swift */,
-				C71B4EFB2357C1C6006796C9 /* ViewController.swift */,
-				C71B4EFD2357C1C6006796C9 /* Main.storyboard */,
-				C71B4F002357C1C7006796C9 /* Assets.xcassets */,
-				C71B4F022357C1C7006796C9 /* LaunchScreen.storyboard */,
 				C71B4F052357C1C7006796C9 /* Info.plist */,
+				C71B4EF92357C1C6006796C9 /* AppDelegate.swift */,
+				C71B4F002357C1C7006796C9 /* Assets.xcassets */,
+				C70F63E72358AEFD00C2B184 /* ErrorHandlers */,
+				C71B4F022357C1C7006796C9 /* LaunchScreen.storyboard */,
+				C71B4EFD2357C1C6006796C9 /* Main.storyboard */,
+				C70F63E42358AB5300C2B184 /* Services */,
+				C70F63E12358AA4200C2B184 /* Views */,
 			);
 			path = "kiskis-randomizer";
 			sourceTree = "<group>";
@@ -135,7 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70F63E02358A81500C2B184 /* WebPlayerViewController.swift in Sources */,
+				C70F63E62358AEF700C2B184 /* MessageConstants.swift in Sources */,
 				C71B4EFC2357C1C6006796C9 /* ViewController.swift in Sources */,
+				C70F63E32358AB5000C2B184 /* NetworkService.swift in Sources */,
 				C71B4EFA2357C1C6006796C9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
