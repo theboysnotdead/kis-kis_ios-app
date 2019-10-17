@@ -9,12 +9,12 @@
 import UIKit
 
 private enum KisKisMember {
-    case sonya, alyona
+    case sonya, alina
     
     var value: String {
         switch self {
         case .sonya: return "sonya"
-        case .alyona: return "alyona"
+        case .alina: return "alina"
         }
     }
     
@@ -37,7 +37,7 @@ final class ViewController: UIViewController {
         UIView.transition(with: imageBackground, duration: 0.5, options: .transitionCrossDissolve, animations: { [weak self] in
             self?.imageBackground.image = self?.segmentControl.selectedSegmentIndex == 0
                 ? KisKisMember.sonya.image
-                : KisKisMember.alyona.image
+                : KisKisMember.alina.image
             
         })
     }
