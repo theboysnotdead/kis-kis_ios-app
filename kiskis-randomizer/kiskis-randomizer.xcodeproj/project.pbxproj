@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71153319F0696BDACE127CD0 /* Pods_kiskis_randomizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216FDD5C189C735D93F773C2 /* Pods_kiskis_randomizer.framework */; };
 		C70F63E02358A81500C2B184 /* WebPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F63DF2358A81500C2B184 /* WebPlayerViewController.swift */; };
 		C70F63E32358AB5000C2B184 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F63E22358AB5000C2B184 /* NetworkService.swift */; };
 		C70F63E62358AEF700C2B184 /* MessageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70F63E52358AEF700C2B184 /* MessageConstants.swift */; };
@@ -15,9 +16,12 @@
 		C71B4EFF2357C1C6006796C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71B4EFD2357C1C6006796C9 /* Main.storyboard */; };
 		C71B4F012357C1C7006796C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C71B4F002357C1C7006796C9 /* Assets.xcassets */; };
 		C71B4F042357C1C7006796C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71B4F022357C1C7006796C9 /* LaunchScreen.storyboard */; };
+		C7DEEE872358B7BA00079247 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DEEE862358B7BA00079247 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		216FDD5C189C735D93F773C2 /* Pods_kiskis_randomizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kiskis_randomizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		743074E40B93A7F0B838D290 /* Pods-kiskis-randomizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kiskis-randomizer.debug.xcconfig"; path = "Target Support Files/Pods-kiskis-randomizer/Pods-kiskis-randomizer.debug.xcconfig"; sourceTree = "<group>"; };
 		C70F63DF2358A81500C2B184 /* WebPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPlayerViewController.swift; sourceTree = "<group>"; };
 		C70F63E22358AB5000C2B184 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		C70F63E52358AEF700C2B184 /* MessageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageConstants.swift; sourceTree = "<group>"; };
@@ -28,6 +32,8 @@
 		C71B4F002357C1C7006796C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C71B4F032357C1C7006796C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C71B4F052357C1C7006796C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7DEEE862358B7BA00079247 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		D3F7C0FC8672FE4ECDA88958 /* Pods-kiskis-randomizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kiskis-randomizer.release.xcconfig"; path = "Target Support Files/Pods-kiskis-randomizer/Pods-kiskis-randomizer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,12 +41,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71153319F0696BDACE127CD0 /* Pods_kiskis_randomizer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BCABFB680C469AD1339C26C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				743074E40B93A7F0B838D290 /* Pods-kiskis-randomizer.debug.xcconfig */,
+				D3F7C0FC8672FE4ECDA88958 /* Pods-kiskis-randomizer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4960E8230C8B1920CC90FA30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				216FDD5C189C735D93F773C2 /* Pods_kiskis_randomizer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C70F63E12358AA4200C2B184 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				C70F63E52358AEF700C2B184 /* MessageConstants.swift */,
+				C7DEEE862358B7BA00079247 /* Alert.swift */,
 			);
 			path = ErrorHandlers;
 			sourceTree = "<group>";
@@ -71,6 +96,8 @@
 			children = (
 				C71B4EF82357C1C6006796C9 /* kiskis-randomizer */,
 				C71B4EF72357C1C6006796C9 /* Products */,
+				0BCABFB680C469AD1339C26C /* Pods */,
+				4960E8230C8B1920CC90FA30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,12 +116,20 @@
 				C71B4EF92357C1C6006796C9 /* AppDelegate.swift */,
 				C71B4F002357C1C7006796C9 /* Assets.xcassets */,
 				C70F63E72358AEFD00C2B184 /* ErrorHandlers */,
-				C71B4F022357C1C7006796C9 /* LaunchScreen.storyboard */,
-				C71B4EFD2357C1C6006796C9 /* Main.storyboard */,
+				C7DEEE852358B51300079247 /* Screens */,
 				C70F63E42358AB5300C2B184 /* Services */,
 				C70F63E12358AA4200C2B184 /* Views */,
 			);
 			path = "kiskis-randomizer";
+			sourceTree = "<group>";
+		};
+		C7DEEE852358B51300079247 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C71B4F022357C1C7006796C9 /* LaunchScreen.storyboard */,
+				C71B4EFD2357C1C6006796C9 /* Main.storyboard */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C71B4F082357C1C7006796C9 /* Build configuration list for PBXNativeTarget "kiskis-randomizer" */;
 			buildPhases = (
+				A5C48BA251CA84C08E81A8E0 /* [CP] Check Pods Manifest.lock */,
 				C71B4EF22357C1C6006796C9 /* Sources */,
 				C71B4EF32357C1C6006796C9 /* Frameworks */,
 				C71B4EF42357C1C6006796C9 /* Resources */,
+				86909BD0D0480996E33BAFEE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,11 +200,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		86909BD0D0480996E33BAFEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kiskis-randomizer/Pods-kiskis-randomizer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kiskis-randomizer/Pods-kiskis-randomizer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kiskis-randomizer/Pods-kiskis-randomizer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5C48BA251CA84C08E81A8E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kiskis-randomizer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C71B4EF22357C1C6006796C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7DEEE872358B7BA00079247 /* Alert.swift in Sources */,
 				C70F63E02358A81500C2B184 /* WebPlayerViewController.swift in Sources */,
 				C70F63E62358AEF700C2B184 /* MessageConstants.swift in Sources */,
 				C71B4EFC2357C1C6006796C9 /* ViewController.swift in Sources */,
@@ -316,6 +396,7 @@
 		};
 		C71B4F092357C1C7006796C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 743074E40B93A7F0B838D290 /* Pods-kiskis-randomizer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -334,6 +415,7 @@
 		};
 		C71B4F0A2357C1C7006796C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3F7C0FC8672FE4ECDA88958 /* Pods-kiskis-randomizer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

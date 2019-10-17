@@ -6,7 +6,7 @@
 //  Copyright © 2019 theboysnotdead. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 final class MessageConstants {
     

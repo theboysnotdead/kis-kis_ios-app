@@ -14,7 +14,7 @@ final class NetworkService {
     typealias Action<T> = (T) -> Void
     
     func getKisKisVideo(successHandler: @escaping Action<String>,  errorHandler: @escaping Action<String>) {
-        guard let kiskisPath = URL(string: baseUrlPath + "/kiskis") else {
+        guard let kiskisPath = URL(string: baseUrlPath + "/watch?v=A-ouS-cBu8I") else {
             errorHandler(MessageConstants.AlertMessages.wrongPath.message)
             return
         }

@@ -85,9 +85,48 @@
                     <view key="view" contentMode="scaleToFill" id="y7d-W6-vqu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SXx-Dx-umJ">
+                                <rect key="frame" x="40" y="567" width="295" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rae-Qu-fX6">
+                                        <rect key="frame" x="0.0" y="0.0" width="147.5" height="30"/>
+                                        <state key="normal" title="Играть"/>
+                                        <connections>
+                                            <action selector="playButtonPressed:" destination="bv1-dG-Hb1" eventType="touchUpInside" id="ibU-Yj-BhS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOp-We-bgd">
+                                        <rect key="frame" x="147.5" y="0.0" width="147.5" height="30"/>
+                                        <state key="normal" title="Пауза"/>
+                                        <connections>
+                                            <action selector="pauseButtonPressed:" destination="bv1-dG-Hb1" eventType="touchUpInside" id="DV5-77-pSZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a53-hz-H9D" customClass="YouTubePlayerView" customModule="YouTubePlayer">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="547"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="M9x-lo-r8W" firstAttribute="bottom" secondItem="SXx-Dx-umJ" secondAttribute="bottom" constant="50" id="LrL-tM-J3k"/>
+                            <constraint firstItem="SXx-Dx-umJ" firstAttribute="leading" secondItem="M9x-lo-r8W" secondAttribute="leading" constant="40" id="b5G-Vq-TM2"/>
+                            <constraint firstItem="a53-hz-H9D" firstAttribute="leading" secondItem="M9x-lo-r8W" secondAttribute="leading" id="fBw-No-6Ks"/>
+                            <constraint firstItem="M9x-lo-r8W" firstAttribute="trailing" secondItem="a53-hz-H9D" secondAttribute="trailing" id="mtB-zX-32p"/>
+                            <constraint firstItem="SXx-Dx-umJ" firstAttribute="top" secondItem="a53-hz-H9D" secondAttribute="bottom" constant="20" id="rcL-er-5eS"/>
+                            <constraint firstItem="a53-hz-H9D" firstAttribute="top" secondItem="M9x-lo-r8W" secondAttribute="top" id="yAD-36-e3b"/>
+                            <constraint firstItem="M9x-lo-r8W" firstAttribute="trailing" secondItem="SXx-Dx-umJ" secondAttribute="trailing" constant="40" id="zP7-Qr-YJj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="M9x-lo-r8W"/>
                     </view>
+                    <connections>
+                        <outlet property="pauseButton" destination="DOp-We-bgd" id="0ue-Cw-7ql"/>
+                        <outlet property="playButton" destination="rae-Qu-fX6" id="9bI-zm-pz7"/>
+                        <outlet property="youTubeView" destination="a53-hz-H9D" id="WJt-XD-SMC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QmO-wb-b7U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
