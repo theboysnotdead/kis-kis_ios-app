@@ -16,6 +16,9 @@
 		C71B4EFF2357C1C6006796C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71B4EFD2357C1C6006796C9 /* Main.storyboard */; };
 		C71B4F012357C1C7006796C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C71B4F002357C1C7006796C9 /* Assets.xcassets */; };
 		C71B4F042357C1C7006796C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71B4F022357C1C7006796C9 /* LaunchScreen.storyboard */; };
+		C765842F2359BB620012BA12 /* right_swipe.wav in Resources */ = {isa = PBXBuildFile; fileRef = C765842C2359BB620012BA12 /* right_swipe.wav */; };
+		C76584302359BB620012BA12 /* left_swipe.wav in Resources */ = {isa = PBXBuildFile; fileRef = C765842D2359BB620012BA12 /* left_swipe.wav */; };
+		C76584312359BB620012BA12 /* tinder_queen.wav in Resources */ = {isa = PBXBuildFile; fileRef = C765842E2359BB620012BA12 /* tinder_queen.wav */; };
 		C7DEEE872358B7BA00079247 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7DEEE862358B7BA00079247 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +35,9 @@
 		C71B4F002357C1C7006796C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C71B4F032357C1C7006796C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C71B4F052357C1C7006796C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C765842C2359BB620012BA12 /* right_swipe.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = right_swipe.wav; sourceTree = "<group>"; };
+		C765842D2359BB620012BA12 /* left_swipe.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = left_swipe.wav; sourceTree = "<group>"; };
+		C765842E2359BB620012BA12 /* tinder_queen.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tinder_queen.wav; sourceTree = "<group>"; };
 		C7DEEE862358B7BA00079247 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		D3F7C0FC8672FE4ECDA88958 /* Pods-kiskis-randomizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kiskis-randomizer.release.xcconfig"; path = "Target Support Files/Pods-kiskis-randomizer/Pods-kiskis-randomizer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,12 +121,23 @@
 				C71B4F052357C1C7006796C9 /* Info.plist */,
 				C71B4EF92357C1C6006796C9 /* AppDelegate.swift */,
 				C71B4F002357C1C7006796C9 /* Assets.xcassets */,
+				C76584322359BB720012BA12 /* Audio */,
 				C70F63E72358AEFD00C2B184 /* ErrorHandlers */,
 				C7DEEE852358B51300079247 /* Screens */,
 				C70F63E42358AB5300C2B184 /* Services */,
 				C70F63E12358AA4200C2B184 /* Views */,
 			);
 			path = "kiskis-randomizer";
+			sourceTree = "<group>";
+		};
+		C76584322359BB720012BA12 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				C765842D2359BB620012BA12 /* left_swipe.wav */,
+				C765842C2359BB620012BA12 /* right_swipe.wav */,
+				C765842E2359BB620012BA12 /* tinder_queen.wav */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 		C7DEEE852358B51300079247 /* Screens */ = {
@@ -192,9 +209,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C765842F2359BB620012BA12 /* right_swipe.wav in Resources */,
 				C71B4F042357C1C7006796C9 /* LaunchScreen.storyboard in Resources */,
 				C71B4F012357C1C7006796C9 /* Assets.xcassets in Resources */,
 				C71B4EFF2357C1C6006796C9 /* Main.storyboard in Resources */,
+				C76584302359BB620012BA12 /* left_swipe.wav in Resources */,
+				C76584312359BB620012BA12 /* tinder_queen.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
