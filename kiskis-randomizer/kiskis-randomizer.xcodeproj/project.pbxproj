@@ -28,7 +28,7 @@
 		C70F63DF2358A81500C2B184 /* WebPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPlayerViewController.swift; sourceTree = "<group>"; };
 		C70F63E22358AB5000C2B184 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		C70F63E52358AEF700C2B184 /* MessageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageConstants.swift; sourceTree = "<group>"; };
-		C71B4EF62357C1C6006796C9 /* kiskis-randomizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kiskis-randomizer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C71B4EF62357C1C6006796C9 /* Кис-Кис.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Кис-Кис.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C71B4EF92357C1C6006796C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C71B4EFB2357C1C6006796C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C71B4EFE2357C1C6006796C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		C71B4EF72357C1C6006796C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C71B4EF62357C1C6006796C9 /* kiskis-randomizer.app */,
+				C71B4EF62357C1C6006796C9 /* Кис-Кис.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,7 +168,7 @@
 			);
 			name = "kiskis-randomizer";
 			productName = "kiskis-randomizer";
-			productReference = C71B4EF62357C1C6006796C9 /* kiskis-randomizer.app */;
+			productReference = C71B4EF62357C1C6006796C9 /* Кис-Кис.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -427,9 +427,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "theboysnotdead.kiskis-randomizer";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Кис-Кис";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -446,9 +446,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "theboysnotdead.kiskis-randomizer";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Кис-Кис";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
